@@ -1,0 +1,19 @@
+syntax = "proto2";
+package proto_msg;
+
+message MoveBaseActionGoal
+{
+        required string         protocol_type = 1;
+        required double		msg_publish_stamp = 2;
+        required string 	msg_frame_id = 3;
+        required double		action_publish_stamp = 4;
+        required string 	action_id = 5;
+        required double		goal_publish_stamp = 6;
+        required string 	goal_frame_id = 7;
+        required double 	x = 8;
+        required double 	y = 9;
+        required double 	z = 10;
+        required double 	roll = 11;
+        required double 	pitch = 12;
+        required double 	yaw = 13;
+}

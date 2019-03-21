@@ -1,0 +1,12 @@
+<launch>
+   <node name="client_node" pkg="communication" type="client_node" respawn="true" output="screen" >
+       <!-- <param name="targetIP" value="192.168.3.141" /> -->
+       <param name="mode" value="nav" />
+       <param name="targetPort" value="8002" />
+       <param name="localPort" value="8001" />
+       <param name="sendSize" value="10"/>
+       <param name="recvSize" value="5"/>
+       <param name="bufferPackageSize" value="1" />
+       <param name="bufferParseSize" value="1" />
+    </node>
+</launch>

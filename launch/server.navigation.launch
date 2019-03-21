@@ -1,0 +1,13 @@
+<launch>
+    <node name="server_node" pkg="communication" type="server_node" respawn="true" output="screen" >
+        <!-- <param name="targetIP" value="192.168.3.146" /> -->
+        <param name="mode" value="nav" />
+        <param name="targetPort" value="8001" />
+        <param name="localPort" value="8002" />
+        <param name="sendSize" value="5"/>
+        <param name="recvSize" value="10"/>
+        <param name="bufferPackageSize" value="1" />
+        <param name="bufferParseSize" value="3" />
+        <remap from="/move_base_simple/goal" to="/move_base_simple/goal1"/>
+    </node>
+</launch>

@@ -1,0 +1,22 @@
+syntax = "proto2";
+package proto_msg;
+
+message PathPoint 
+{
+        required double		publish_stamp = 1;
+        required string 	frame_id = 2;
+        required double 	x = 3;
+        required double 	y = 4;
+        required double 	z = 5;
+        required double 	roll = 6;
+        required double 	pitch = 7;
+        required double 	yaw = 8;
+}
+
+message Path
+{
+        required string         protocol_type = 1;
+        required double		publish_stamp = 2;
+        required string 	frame_id = 3;
+        repeated PathPoint	poses = 4;
+}

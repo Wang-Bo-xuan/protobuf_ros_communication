@@ -1,0 +1,24 @@
+syntax = "proto2";
+package proto_msg;
+
+message Odometry
+{
+        required string         protocol_type = 1;
+        required double		publish_stamp = 2;
+        required string 	frame_id = 3;
+        required string 	child_frame_id = 4;
+        required double 	pose_x = 5;
+        required double 	pose_y = 6;
+        required double 	pose_z = 7;
+        required double 	pose_roll = 8;
+        required double 	pose_pitch = 9;
+        required double 	pose_yaw = 10;
+        repeated double	 	pose_cova = 11;
+        required double 	twist_x = 12;
+        required double 	twist_y = 13;
+        required double 	twist_z = 14;
+        required double 	twist_roll = 15;
+        required double 	twist_pitch = 16;
+        required double 	twist_yaw = 17;
+        repeated double	 	twist_cova = 18;
+}

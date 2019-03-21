@@ -1,0 +1,27 @@
+syntax = "proto2";
+package proto_msg;
+
+message TF
+{
+        required double		publish_stamp = 2;
+        required string 	frame_id = 3;
+        required string 	child_frame_id = 4;
+        required double 	x = 5;
+        required double 	y = 6;
+        required double 	z = 7;
+        required double 	roll = 8;
+        required double 	pitch = 9;
+        required double 	yaw = 10;
+}
+
+message TFMessage
+{
+        required string         protocol_type = 1;
+        repeated TF             tfs = 2;
+}
+
+message TFStaticMessage
+{
+        required string         protocol_type = 1;
+        repeated TF             tfs = 2;
+}

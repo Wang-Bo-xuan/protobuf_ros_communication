@@ -1,0 +1,18 @@
+syntax = "proto2";
+package proto_msg;
+
+message LaserScan
+{
+        required string     protocol_type = 1;
+        required double		publish_stamp = 2;
+        required string 	frame_id = 3;
+        required float		angle_min = 4;
+        required float		angle_max = 5;
+        required float		angle_increment = 6;
+        required float		time_increment = 7;
+        required float		scan_time = 8;
+        required float		range_min = 9;
+        required float		range_max = 10;
+        repeated double     ranges = 11;
+        repeated double     intensitys = 12;
+}

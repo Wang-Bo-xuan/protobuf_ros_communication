@@ -1,0 +1,13 @@
+syntax = "proto2";
+package proto_msg;
+
+message Twist
+{
+        required string         protocol_type = 1;
+        required double		x = 2;
+        required double 	y = 3;
+        required double		z = 4;
+	required double		roll = 5;
+	required double		pitch = 6;
+	required double		yaw = 7;
+}

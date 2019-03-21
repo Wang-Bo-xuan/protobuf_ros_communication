@@ -1,0 +1,15 @@
+syntax = "proto3";
+package proto_msg;
+
+message PoseStamped
+{
+        double stamp = 1;
+        string frame_id = 2;
+        double x = 3;
+        double y = 4;
+        double z = 5;
+        double q_x = 6;
+        double q_y = 7;
+        double q_z = 8;
+        double q_w = 9;
+}

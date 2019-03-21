@@ -1,0 +1,24 @@
+syntax = "proto2";
+package proto_msg;
+
+message OccupancyGrid
+{
+        required string         protocol_type = 1;
+        required double		publish_stamp = 2;
+        required double 	load_time = 3;
+        required string 	frame_id = 4;
+        required float 		resolution = 5;
+        required float 		width = 6;
+        required float 		height = 7;
+        required double 	x = 8;
+        required double 	y = 9;
+        required double 	z = 10;
+        required double     q_x = 11;
+        required double     q_y = 12;
+        required double     q_z = 13;
+        required double     q_w = 14;
+        required bytes	 	map_data = 15;
+        //required double 	roll = 11;
+        //required double 	pitch = 12;
+        //required double 	yaw = 13;
+}
